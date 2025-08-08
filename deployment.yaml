@@ -16,7 +16,7 @@ spec:
       - name: dockerhub-creds
       containers:
       - name: flask-sum-app
-        image: fullstackmalinda/flask-sum-app:latest
+        image: fullstackmalinda/flask_sum_app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
