@@ -28,10 +28,11 @@ kind: Service
 metadata:
   name: flask-sum-app-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: flask-sum-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 5000
+      nodePort: 30100
